@@ -53,7 +53,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define RGBLIGHT_ANIMATIONS
 #define RGB_DI_PIN B15
-#define RGBLED_NUM 20
+#define RGBLED_NUM 45
 #define WS2812_SPI SPID2
 #define WS2812_SPI_MOSI_PAL_MODE 0
 #define WS2812_SPI_SCK_PAL_MODE 0
@@ -67,7 +67,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* disable debug print */
 //#define NO_DEBUG
 
-/* disable print */
+
 //#define NO_PRINT
 
 /* disable action features */

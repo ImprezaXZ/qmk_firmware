@@ -32,3 +32,38 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Reduce tapdance required taps from 5 to 2 */
 #define TAPPING_TOGGLE 2
+
+/* USB Device descriptor parameter */
+#define DEVICE_VER      0x0010
+
+/* Column/Row IO definitions */
+#define MATRIX_ROWS 4
+#define MATRIX_COLS 5
+#define MATRIX_ROW_PINS { F4, F5, F6, F7 }
+#define MATRIX_COL_PINS { C6, D7, E6, B4, B5 }
+#define UNUSED_PINS
+
+/* Single rotary encoder */
+#define ENCODERS_PAD_A { B2 }
+#define ENCODERS_PAD_B { D4 }
+#define VIAL_ENCODER_DEFAULT { KC_MS_R, KC_MS_L, KC_VOLU, KC_VOLD, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS }
+
+/* Onboard LEDs  */
+#define LED_00 B1
+#define LED_01 B6
+#define LED_02 B3
+
+/* Bootmagic - hold down rotary encoder pushbutton while plugging in to enter bootloader */
+#define BOOTMAGIC_LITE_ROW 3
+#define BOOTMAGIC_LITE_COLUMN 0
+
+#define RGB_DI_PIN D3
+#ifdef RGB_DI_PIN
+    #define RGBLED_NUM 8
+    #define RGBLIGHT_HUE_STEP 8
+    #define RGBLIGHT_SAT_STEP 8
+    #define RGBLIGHT_VAL_STEP 8
+    #define RGBLIGHT_LIMIT_VAL 255 /* The maximum brightness level */
+    #define RGBLIGHT_ANIMATIONS
+
+#endif
