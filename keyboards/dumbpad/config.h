@@ -46,7 +46,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Single rotary encoder */
 #define ENCODERS_PAD_A { B2 }
 #define ENCODERS_PAD_B { D4 }
+<<<<<<< HEAD
 #define VIAL_ENCODER_DEFAULT { KC_MS_R, KC_MS_L, KC_VOLU, KC_VOLD, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS }
+=======
+>>>>>>> b3e8a056a72edd2ec49417562cbf992e865ab865
 
 /* Onboard LEDs  */
 #define LED_00 B1
@@ -56,6 +59,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Bootmagic - hold down rotary encoder pushbutton while plugging in to enter bootloader */
 #define BOOTMAGIC_LITE_ROW 3
 #define BOOTMAGIC_LITE_COLUMN 0
+<<<<<<< HEAD
 
 #define RGB_DI_PIN D3
 #ifdef RGB_DI_PIN
@@ -67,3 +71,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     #define RGBLIGHT_ANIMATIONS
 
 #endif
+=======
+>>>>>>> b3e8a056a72edd2ec49417562cbf992e865ab865

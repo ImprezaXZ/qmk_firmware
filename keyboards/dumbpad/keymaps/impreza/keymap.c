@@ -30,6 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		};                                 
                                                                                                                                                                                                            
                                                                                                                                                                                                            
+<<<<<<< HEAD
 //bool encoder_update_user(uint8_t index, bool clockwise) {                                                                                                                                                  
  //   if (index == 0) {                                                                                                                                                                                      
   //      switch (get_highest_layer(layer_state)) {                                                                                                                                                          
@@ -71,3 +72,46 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
                                                                                                                                                                                     
                                                                                                                                                                                                            
+=======
+bool encoder_update_user(uint8_t index, bool clockwise) {                                                                                                                                                  
+    if (index == 0) {                                                                                                                                                                                      
+        switch (get_highest_layer(layer_state)) {                                                                                                                                                          
+            case _BASE:                                                                                                                                                                                        
+                if (clockwise) {                                                                                                                                                                           
+                    tap_code(KC_MS_R);                                                                                                                                                                     
+                } else {                                                                                                                                                                                   
+                    tap_code(KC_MS_L);                                                                                                                                                                     
+                }                                                                                                                                                                                          
+                break;                                                                                                                                                                                     
+                                                                                                                                                                                                           
+            case _MEDIA:                                                                                                                                                                                       
+                if (clockwise) {                                                                                                                                                                           
+                    tap_code(KC_VOLU);                                                                                                                                                                      
+                } else {                                                                                                                                                                                   
+                    tap_code(KC_VOLD);                                                                                                                                                                     
+                }                                                                                                                                                                                          
+                break;  
+				
+            case _FUNC:                                                                                                                                                                                       
+                if (clockwise) {                                                                                                                                                                           
+                    tap_code(KC_MS_L);                                                                                                                                                                      
+                } else {                                                                                                                                                                                   
+                    tap_code(KC_MS_R);                                                                                                                                                                     
+                }                                                                                                                                                                                          
+                break; 	
+				
+            case _RGB:                                                                                                                                                                                       
+                if (clockwise) {                                                                                                                                                                           
+                    tap_code16(RGB_MOD);                                                                                                                                                                      
+                } else {                                                                                                                                                                                   
+                    tap_code16(RGB_RMOD);                                                                                                                                                                     
+                }                                                                                                                                                                                          
+                break;			
+        }                                                                                                                                                                                                  
+    }                                                                                                                                                                                                      
+    return true;                                                                                                                                                                                           
+}                      
+
+                                                                                                                                                                                    
+                                                                                                                                                                                                           
+>>>>>>> b3e8a056a72edd2ec49417562cbf992e865ab865
