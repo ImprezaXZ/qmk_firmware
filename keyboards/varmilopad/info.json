@@ -1,0 +1,10 @@
+{
+    "keyboard_name": "varmilopad", 
+    "url": "", 
+    "maintainer": "imprezaxz", 
+    "layouts": {
+        "LAYOUT": {
+            "layout": [{"label":"00", "x":0, "y":0}, {"label":"01", "x":1, "y":0}, {"label":"02", "x":2, "y":0}, {"label":"04", "x":3, "y":0}, {"label":"25", "x":0, "y":1}, {"label":"15", "x":1, "y":1}, {"label":"24", "x":2, "y":1}, {"label":"14", "x":3, "y":1}, {"label":"20", "x":0, "y":2}, {"label":"10", "x":1, "y":2}, {"label":"12", "x":2, "y":2}, {"label":"34", "x":3, "y":2}, {"label":"21", "x":0, "y":3}, {"label":"11", "x":1, "y":3}, {"label":"22", "x":2, "y":3}, {"label":"42", "x":0, "y":4}, {"label":"52", "x":1, "y":4}, {"label":"32", "x":2, "y":4}, {"label":"54", "x":3, "y":4}, {"label":"23", "x":0, "y":5}, {"label":"13", "x":1, "y":5}]
+        }
+    }
+}
